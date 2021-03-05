@@ -1,0 +1,11 @@
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" >
+<!-- Set Header -->
+<th:block th:fragment="configFragment">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Content Page의 CSS 삽입 ( 필요한 경우 )-->
+    <th:block layout:fragment="css"></th:block>
+    <!-- Content page의 script 삽입 ( 필요한 경우 ) -->
+    <th:block layout:fragment="script"></th:block>
+</th:block>
+</html>

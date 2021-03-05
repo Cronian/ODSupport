@@ -1,0 +1,10 @@
+com/odsupport/api/v1/web/HelloControllerTest.java
+ com.odsupport.api.v1.web.HelloControllerTest
+com/odsupport/api/v1/domain/posts/PostsRepositoryTest.java
+ com.odsupport.api.v1.domain.posts.PostsRepositoryTest
+com/odsupport/api/v1/web/dto/HelloResponseDtoTest.java
+ com.odsupport.api.v1.web.dto.HelloResponseDtoTest
+com/odsupport/api/v1/web/IndexControllerTest.java
+ com.odsupport.api.v1.web.IndexControllerTest
+com/odsupport/api/v1/web/PostsApiControllerTest.java
+ com.odsupport.api.v1.web.PostsApiControllerTest

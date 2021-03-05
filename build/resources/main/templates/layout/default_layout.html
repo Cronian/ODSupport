@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8" />
+    <title>스프링부트 웹 어플리케이션</title>
+    <th:block th:replace="fragments/config :: configFragment" ></th:block>
+</head>
+<body>
+    <th:block th:replace="fragments/header :: defaultHeader"></th:block>
+    <th:block layout:fragment="content"></th:block>
+    <th:block th:replace="fragments/footer :: defaultFooter"></th:block>
+</body>
+</html>
