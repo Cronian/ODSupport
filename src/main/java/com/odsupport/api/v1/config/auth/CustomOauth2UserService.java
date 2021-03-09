@@ -1,6 +1,7 @@
 package com.odsupport.api.v1.config.auth;
 
 import com.odsupport.api.v1.config.auth.dto.OAuthAttributes;
+import com.odsupport.api.v1.config.auth.dto.SessionUser;
 import com.odsupport.api.v1.domain.user.User;
 import com.odsupport.api.v1.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
