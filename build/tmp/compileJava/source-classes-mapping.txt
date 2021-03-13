@@ -2,8 +2,8 @@ com/odsupport/api/v1/service/PostsService.java
  com.odsupport.api.v1.service.PostsService
 com/odsupport/api/v1/domain/user/UserRepository.java
  com.odsupport.api.v1.domain.user.UserRepository
-com/odsupport/api/v1/web/IndexController.java
- com.odsupport.api.v1.web.IndexController
+com/odsupport/api/v1/config/auth/SecurityConfig.java
+ com.odsupport.api.v1.config.auth.SecurityConfig
 com/odsupport/api/v1/web/HelloController.java
  com.odsupport.api.v1.web.HelloController
 com/odsupport/api/v1/Application.java
@@ -41,5 +41,11 @@ com/odsupport/api/v1/web/dto/PostsSaveRequestDto.java
  com.odsupport.api.v1.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
 com/odsupport/api/v1/domain/posts/PostsRepository.java
  com.odsupport.api.v1.domain.posts.PostsRepository
-com/odsupport/api/v1/config/auth/SecurityConfig.java
- com.odsupport.api.v1.config.auth.SecurityConfig
+com/odsupport/api/v1/config/WebConfig.java
+ com.odsupport.api.v1.config.WebConfig
+com/odsupport/api/v1/config/auth/LoginUserArgumentResolver.java
+ com.odsupport.api.v1.config.auth.LoginUserArgumentResolver
+com/odsupport/api/v1/config/auth/LoginUser.java
+ com.odsupport.api.v1.config.auth.LoginUser
+com/odsupport/api/v1/web/IndexController.java
+ com.odsupport.api.v1.web.IndexController

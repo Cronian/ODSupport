@@ -1,5 +1,6 @@
 package com.odsupport.api.v1.web;
 
+import com.odsupport.api.v1.config.auth.LoginUser;
 import com.odsupport.api.v1.config.auth.dto.SessionUser;
 import com.odsupport.api.v1.domain.user.User;
 import com.odsupport.api.v1.service.PostsService;
@@ -20,9 +21,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts",postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if(user != null) model.addAttribute("userName",user.getName());
         return "index";
     }
