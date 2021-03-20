@@ -73,7 +73,7 @@ public class PostsApiControllerTest {
         String url = "http://localhost:"+port+"/api/v1/posts";
 
         mvc.perform(post(url)
-                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .contentType(MediaType.APPLICATION_JSON)
                 .content(new ObjectMapper().writeValueAsString(requestDto)))
                 .andExpect(status().isOk());
 
@@ -105,7 +105,7 @@ public class PostsApiControllerTest {
         String url = "http://localhost:"+port+"/api/v1/posts/"+updateId;
 
         mvc.perform(put(url)
-                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .contentType(MediaType.APPLICATION_JSON)
                 .content(new ObjectMapper().writeValueAsString(requestDto)))
                 .andExpect(status().isOk());
 
