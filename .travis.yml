@@ -19,7 +19,7 @@ before_install:
 
 # Deploy 전에 설정해줌
 before_deploy:
-  - zip -r ODSupport
+  - zip -r ODSupport *
   - mkdir -p deploy
   - mv ODSupport.zip deploy/ODSupport.zip
 
