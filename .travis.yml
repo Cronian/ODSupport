@@ -17,6 +17,24 @@ script: "./gradlew clean build"
 before_install:
   - chmod +x gradlew
 
+# Deploy 전에 설정해줌
+before_deploy:
+  - zip -r ODSupport
+  - mkdir -p deploy
+  - mv ODSupport.zip deploy/ODSupport.zip
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # AWS 접근 키 ( Travis에 지정 )
+    secret_access_key: $AWS_SECRET_KEY # AWS 시크릿 키 ( Travis에 지정 )
+    bucket: odsupport-build
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip 파일 접근
+    local_dir: deploy # before_deploy에서 생성한 디렉토리
+    wait-until-deployed: true
+
+
 # CI 실행 완료 시 메일로 알람
 notifications:
   email:
