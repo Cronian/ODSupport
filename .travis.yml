@@ -39,6 +39,7 @@ deploy:
     acl: private # zip 파일 접근
     local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
+
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
@@ -48,7 +49,7 @@ deploy:
     bundle_type: zip
     application: ODSupport # 코드디플로이 어플리케이션 이름
     deployment_group: ODSupport-group # 코드디플로이 배포 그룹 이름
-    wait-util-deployed: true
+    wait-until-deployed: true
 
 
 # CI 실행 완료 시 메일로 알람
