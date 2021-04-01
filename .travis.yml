@@ -12,7 +12,6 @@ cache:
     - '$HOME/.gradle'
 script: "./gradlew clean build"
 
-# Prevent Permission denied
 # 실행권한 추가. 없으면 에러남
 before_install:
   - chmod +x gradlew
