@@ -13,8 +13,8 @@ cache:
 script: "./gradlew clean build"
 
 # 실행권한 추가. 없으면 에러남
-before_install:
-  - chmod +x gradlew
+#before_install:
+#  - chmod +x gradlew
 
 # Deploy 전에 설정해줌
 before_deploy:
