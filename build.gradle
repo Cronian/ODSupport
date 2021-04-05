@@ -42,7 +42,8 @@ dependencies {
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')
-    compile fileTree(dir:'libs',include:['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
 }
 
 test {
