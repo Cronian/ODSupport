@@ -22,7 +22,7 @@ apply plugin : 'io.spring.dependency-management'
 
 
 group 'com.ODSuport.mono'
-version '1.0.1-SNAPSHOT-'+new Date().format("yyyy/MMddHHmmss")
+version '1.0.1-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 11
 
 repositories {
