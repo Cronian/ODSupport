@@ -23,7 +23,7 @@ before_deploy:
   - cp appspec.yml before-deploy/ # 아래에서 에러나는걸 확인중
   - cd build
   - ls
-  - cd build/libs
+  - cd libs
   - ls
   - cp build/libs/*.jar before-deploy/ # build 에러가 계속 나는데 왜그러지?
   - cd before-deploy && zip -r before-deploy * # before-deploy로 이동 후 전체 압축
