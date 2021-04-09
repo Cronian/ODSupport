@@ -25,6 +25,7 @@ before_deploy:
   - ls
   - cd libs
   - ls
+  - ll
   - cp build/libs/*.jar before-deploy/ # build 에러가 계속 나는데 왜그러지?
   - cd before-deploy && zip -r before-deploy * # before-deploy로 이동 후 전체 압축
   - cd ../ && mkdir -p deploy # 상위 디렉토리로 이동 후 deploy 디렉토리 생성
